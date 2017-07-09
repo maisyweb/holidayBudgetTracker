@@ -1,0 +1,11 @@
+<ion-view title="{{informationItem.name}}" id="page13" class="side-menu-gradient">
+  <ion-content padding="true" class="has-header">
+    <div id="details-markdown1" class="show-list-numbers-and-dots mainContent">
+      <p style="color:#FFFFFF;">{{informationItem.description}}</p>
+    </div>
+    <div id="details-button-bar2" class="button-bar">
+      <a ui-sref="tabsController.InformationItemName({&quot;itemkey&quot;:&quot;&quot;+informationItem.key+&quot;&quot;})" id="details-button11" class="button button-positive button-block icon-left ion-android-map">Map</a>
+      <a href-inappbrowser="{{informationItem.website}}" id="details-button12" class="button button-positive button-block icon-left ion-android-globe">Website</a>
+    </div>
+  </ion-content>
+</ion-view>

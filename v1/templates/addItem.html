@@ -1,0 +1,29 @@
+<ion-view title="Add Item" id="page12" class="side-menu-gradient">
+  <ion-content padding="false" class="has-header">
+    <div class="spacer" style="height: 15px;"></div>
+    <div id="addItem-markdown2" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#FFFFFF;">Fill out the form to record a transaction</p>
+    </div>
+    <form id="addItem-form3" class="list">
+      <label class="item item-select" id="addItem-select1" name="userId">
+        <span class="input-label">Family Member</span>
+        <select ng-model="data.userid">
+          <option>James</option>
+          <option>Tori</option>
+          <option>Daisy</option>
+          <option>Millie</option>
+          <option>Grace</option>
+        </select>
+      </label>
+      <label class="item item-input" id="addItem-input3" name="title">
+        <input type="text" placeholder="Title" ng-model="data.title">
+      </label>
+      <label class="item item-input" id="addItem-textarea1" name="description">
+        <span class="input-label"></span><textarea placeholder="Description" ng-model="data.description"></textarea></label>
+      <label class="item item-input" id="addItem-input4" name="price">
+        <input type="text" placeholder="Price" ng-model="data.price">
+      </label>
+    </form>
+    <button id="addItem-button13" ng-click="submit()" ng-disabled="Submitting" class="button button-positive button-block">Add Transaction</button>
+  </ion-content>
+</ion-view>

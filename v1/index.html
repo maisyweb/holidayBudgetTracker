@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    
+    
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <style type="text/css">
+      .platform-ios .manual-ios-statusbar-padding{
+        padding-top:20px;
+      }
+      .manual-remove-top-padding{
+        padding-top:0px; 
+      }
+      .manual-remove-top-padding .scroll{
+        padding-top:0px !important;
+      }
+      ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+        margin-left:-10px;
+        margin-right:-10px;
+      }
+      ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+        border-radius:0px;
+        border-left:0px;
+        border-right: 0px;
+      }
+      .show-list-numbers-and-dots ul{
+        list-style-type: disc;
+        padding-left:40px;
+      }
+      .show-list-numbers-and-dots ol{
+        list-style-type: decimal;
+        padding-left:40px;
+      }
+    </style>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+    
+    <script src="js/directives.js"></script>
+    <script src="js/services.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.15.0/lodash.min.js"></script>
+    <script src="js/angular-simple-logger.js"></script>
+    <script src="js/angular-google-maps.min.js"></script>
+    <script src="js/googlemaps.init.js"></script>
+    <script src="js/information.js"></script>
+
+    <!-- Only required for Tab projects w/ pages in multiple tabs 
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    -->
+
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+  <div>
+  <ion-side-menus enable-menu-with-back-views="false" data-componentid="side-menu21">
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar-calm">
+        <ion-nav-back-button></ion-nav-back-button>
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+      <ion-nav-view></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21">
+      <ion-content ng-controller="shortcutsCtrl" padding="false" style="top:0px !important;" class="side-menu-left side-menu-gradient">
+        <div class="spacer" data-componentid="spacer1" style="width: 251px; height: 15px;"></div>
+        <div class="profile-image" data-componentid="image1">
+          <img src="img/vKVnnmgiTBGBLzraQJGJ_20151029080910_VGkmR.jpg" style="display: block; width: 60%; height: auto; margin-left: auto; margin-right: auto;">
+        </div>
+        <h3 id="shortcuts-heading2" style="color:#FFFFFF;font-weight:300;text-align:center;" data-componentid="heading2">Orlando 2017</h3>
+        <ion-list id="shortcuts-list5" data-componentid="list5">
+          <ion-item class="item-icon-right side-menu-item" id="shortcuts-list-item27" ui-sref="tabsController.people()" menu-close="" data-componentid="list-item27">Profiles
+            <i class="icon ion-android-person"></i>
+          </ion-item>
+          <ion-item class="item-icon-right side-menu-item" id="shortcuts-list-item28" ui-sref="tabsController.addItem()" menu-close="" data-componentid="list-item28">Transactions
+            <i class="icon ion-cash"></i>
+          </ion-item>
+          <ion-item class="item-icon-right side-menu-item" id="shortcuts-list-item30" ui-sref="tabsController.information()" menu-close="" data-componentid="list-item30">Useful Information
+            <i class="icon ion-information"></i>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>
+</div>
+  </body>
+</html>

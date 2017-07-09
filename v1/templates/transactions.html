@@ -1,0 +1,23 @@
+<ion-view title="Transactions" id="page15" class="side-menu-gradient">
+  <ion-content padding="false" class="has-header">
+    <h4 id="transactions-heading3" style="color:#FFFFFF;text-align:center;">{{username}} Transactions</h4>
+    <ion-list id="transactions-list10">
+      <ion-item id="transactions-list-item18">Starting Budget
+        <span class="item-note">${{budget}}</span>
+      </ion-item>
+      <ion-item id="transactions-list-item19">Spent
+        <span class="item-note">${{budgetSpent}}</span>
+      </ion-item>
+      <ion-item id="transactions-list-item20">Left Over
+        <span class="item-note">${{budgetLeft}}</span>
+      </ion-item>
+    </ion-list>
+    <h4 id="transactions-heading4" style="color:#FFFFFF;text-align:center;">Transaction List</h4>
+    <ion-list id="transactions-list9">
+      <ion-item class="item-icon-right side-menu-item" id="transactions-list-item14" ui-sref="tabsController.transactionDetails({&quot;itemId&quot;:&quot;&quot;+Transactions.ITEMID+&quot;&quot;})" ng-repeat="Transactions in transactionArray">{{Transactions.TITLE}}
+        <span class="item-note">${{Transactions.PRICE}}</span>
+        <i class="icon ion-chevron-right"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
